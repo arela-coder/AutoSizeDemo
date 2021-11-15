@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="drive_mode_ppw">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/height_134_dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">@dimen/width_1116_dp</item>
+        <item name="android:layout_height">@dimen/height_453_dp</item>
+    </style>
+
+    <style name="energy_recycle_radiobutton_style">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">@dimen/width_128_dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="content_text_style_20_30per">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_24_30per">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="content_text_style_24_50per">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="content_text_style_20_blue_100per">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_24_red_100per">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_28_70per">
+        <item name="android:textSize">@dimen/sp_28</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_28_100per">
+        <item name="android:textSize">@dimen/sp_28</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_30_100per">
+        <item name="android:textSize">@dimen/sp_30</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_32_80per">
+        <item name="android:textSize">@dimen/sp_32</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_32_100per">
+        <item name="android:textSize">@dimen/sp_32</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="content_text_style_36_90per">
+        <item name="android:textSize">@dimen/sp_36</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_36_100per">
+        <item name="android:textSize">@dimen/sp_36</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_40_100per">
+        <item name="android:textSize">@dimen/sp_40</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_42_100per">
+        <item name="android:textSize">@dimen/sp_42</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_48_90per">
+        <item name="android:textSize">@dimen/sp_48</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_text_style_50_100per">
+        <item name="android:textSize">@dimen/sp_50</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="SceneEditCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <!--        <item name="android:button">@drawable/cb_scene_edit_selector</item>-->
+        <!--        <item name="android:textColor">@drawable/cb_scene_text_color_selector</item>-->
+        <item name="android:paddingLeft">@dimen/width_48_dp</item>
+        <item name="android:textSize">@dimen/sp_32</item>
+        <item name="android:layout_marginStart">@dimen/width_40_dp</item>
+        <item name="android:layout_marginTop">@dimen/height_38_dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_45_dp</item>
+    </style>
+
+    <style name="SceneCheckboxBackGround" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/white</item>
+        <!--        <item name="android:background">@drawable/bg_scene_radio_button_selector</item>-->
+        <item name="android:textSize">@dimen/sp_32</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SceneEditRadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp_28</item>
+        <!--        <item name="android:background">@drawable/bg_scene_radio_button_selector</item>-->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="IJiaQuRadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp_24</item>
+        <!--        <item name="android:background">@drawable/selector_bg_rb_ijiaqu_mode</item>-->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="LightSpaceScene">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/width_60_dp</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="style_bar_chart_bottom_tv">
+        <item name="android:lineSpacingExtra">-5dp</item>
+        <item name="android:includeFontPadding">true</item>
+        <item name="android:layout_width">@dimen/width_88_dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/width_16_dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <declare-styleable name="SceneCard">
+        <attr name="background" format="reference" />
+        <attr name="icon" format="reference" />
+        <attr name="title" format="string" />
+    </declare-styleable>
+</resources>

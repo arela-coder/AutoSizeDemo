@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llyt_menu"
+        android:layout_width="@dimen/width_180_dp"
+        android:layout_height="match_parent"
+        android:background="#123456"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llyt_music_usb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120_dp"
+            android:layout_marginTop="@dimen/height_56_dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_music_usb"
+                android:layout_width="@dimen/width_80_dp"
+                android:layout_height="@dimen/height_80_dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/height_4_dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_leftmenu_usb_sel" />
+
+            <TextView
+                android:id="@+id/tv_music_usb"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_20_dp"
+                android:layout_gravity="center"
+                android:text="@string/tab_usb_music"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_music_bt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120_dp"
+            android:layout_marginTop="@dimen/height_8_dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_music_bt"
+                android:layout_width="@dimen/width_80_dp"
+                android:layout_height="@dimen/height_80_dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_leftmenu_bt_sel" />
+
+            <TextView
+                android:id="@+id/tv_music_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/tab_bt_music"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_radio"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_120_dp"
+            android:layout_marginTop="@dimen/height_8_dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_radio"
+                android:layout_width="@dimen/width_80_dp"
+                android:layout_height="@dimen/height_80_dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_leftmenu_radio_sel" />
+
+            <TextView
+                android:id="@+id/tv_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/tab_radio"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/media_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/llyt_menu" />
+
+    <include
+        layout="@layout/fragment_usb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/llyt_menu" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/dpi_test"
+        android:textColor="@color/purple_200"
+        android:textSize="@dimen/sp_30" />
+
+
+</RelativeLayout>

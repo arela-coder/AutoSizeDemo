@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_600_dp"
+        android:layout_marginStart="@dimen/width_20_dp"
+        android:layout_marginTop="@dimen/height_100_dp"
+        android:layout_marginEnd="@dimen/width_20_dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/view_left_top"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/width_20_dp"
+            android:layout_weight="1"
+            android:background="@color/purple_200" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/width_20_dp"
+            android:layout_weight="1"
+            android:background="@color/purple_500" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/static_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_600_dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/map" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_600_dp"
+        android:layout_below="@id/static_launcher"
+        android:layout_marginStart="@dimen/width_20_dp"
+        android:layout_marginTop="@dimen/height_100_dp"
+        android:layout_marginEnd="@dimen/width_20_dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/media"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/teal_200" />
+
+        <RelativeLayout
+            android:id="@+id/brand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#55123456" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dpi_test"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_80" />
+
+</RelativeLayout>

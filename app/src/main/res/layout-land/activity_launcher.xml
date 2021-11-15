@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_485_dp"
+        android:layout_height="@dimen/height_304_dp"
+        android:layout_marginTop="@dimen/height_45_dp"
+        android:background="@color/purple_200" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_485_dp"
+        android:layout_height="@dimen/height_355_dp"
+        android:layout_marginTop="@dimen/height_364_dp"
+        android:background="@color/purple_500" />
+
+    <TextureView
+        android:id="@+id/launcher"
+        android:layout_width="@dimen/width_904_dp"
+        android:layout_height="@dimen/height_555_dp"
+        android:layout_marginLeft="@dimen/width_464_dp"
+        android:layout_marginTop="@dimen/height_59_dp" />
+
+    <RelativeLayout
+        android:id="@+id/static_launcher"
+        android:layout_width="@dimen/width_904_dp"
+        android:layout_height="@dimen/height_555_dp"
+        android:layout_marginLeft="@dimen/width_480_dp"
+        android:layout_marginTop="@dimen/height_59_dp"
+        android:background="@drawable/map" />
+
+    <RelativeLayout
+        android:id="@+id/media"
+        android:layout_width="@dimen/width_512_dp"
+        android:layout_height="@dimen/height_402_dp"
+        android:layout_marginLeft="@dimen/width_1384_dp"
+        android:layout_marginTop="@dimen/height_45_dp"
+        android:background="@color/teal_200" />
+
+    <RelativeLayout
+        android:id="@+id/brand"
+        android:layout_width="@dimen/width_512_dp"
+        android:layout_height="@dimen/height_335_dp"
+        android:layout_marginLeft="@dimen/width_1384_dp"
+        android:layout_marginTop="@dimen/height_385_dp"
+        android:background="#55123456" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dpi_test"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_80" />
+</RelativeLayout>
