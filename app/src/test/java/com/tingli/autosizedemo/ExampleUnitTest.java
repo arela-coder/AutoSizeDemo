@@ -4,6 +4,8 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+import java.util.Arrays;
+
 /**
  * Example local unit test, which will execute on the development machine (host).
  *
@@ -43,7 +45,39 @@ public class ExampleUnitTest {
 
     String s = " ";
 
+    private int[] nums1 = new int[]{1, 2};
+    private int[] nums2 = new int[]{3, 4};
+
     @Test
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+
+        int[] nums = new int[]{};
+        for (int i = 0; i < nums1.length; i++)
+        {
+            nums[i] = nums1[i];
+        }
+        for (int j = nums1.length; j < nums2.length; j++)
+        {
+            nums[j] = nums2[j];
+        }
+
+        Arrays.stream(nums).sorted();
+
+        if (nums.length % 2 == 0)
+        {
+            return nums[nums.length / 2] / 2;
+        }
+        else
+        {
+
+        }
+
+
+        return 0;
+
+    }
+
+
     public void test() {
 
         int resultLength = s.length();

@@ -1,6 +1,7 @@
 package com.tingli.autosizedemo;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -14,13 +15,25 @@ public class MainActivity extends Activity {
     //public class MainActivity extends com.tingli.autosizedemo.AutoSizeActivity {
     String TAG = getClass().getSimpleName();
 
+
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        DisplayMetrics displayMetrics = getApplication().getResources().getDisplayMetrics();
+        Log.d(TAG, "onConfigurationChanged displayMetrics: " + displayMetrics.toString());
+        Log.d(TAG, "onConfigurationChanged displayMetrics: width in dp:" + displayMetrics.widthPixels / displayMetrics.density);
+        Log.d(TAG, "onConfigurationChanged displayMetrics: height in dp:" + displayMetrics.heightPixels / displayMetrics.density);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
 
         DisplayMetrics displayMetrics = getApplication().getResources().getDisplayMetrics();
-        Log.d(TAG, "displayMetrics: " + displayMetrics.toString());
+        Log.d(TAG, "onCreate displayMetrics: " + displayMetrics.toString());
+        Log.d(TAG, "onCreate displayMetrics: width in dp:" + displayMetrics.widthPixels / displayMetrics.density);
+        Log.d(TAG, "onCreate displayMetrics: height in dp:" + displayMetrics.heightPixels / displayMetrics.density);
 
         /**
          * 10-01 08:00:09.030  4381  4381 D ScreenShare: [ScreenManager]:presentation display Display id 2: DisplayInfo{"HDMI 屏幕",

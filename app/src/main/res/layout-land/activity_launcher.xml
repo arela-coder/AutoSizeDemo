@@ -25,9 +25,9 @@
 
     <RelativeLayout
         android:id="@+id/static_launcher"
-        android:layout_width="@dimen/width_904_dp"
+        android:layout_width="@dimen/width_900_dp"
         android:layout_height="@dimen/height_555_dp"
-        android:layout_marginLeft="@dimen/width_480_dp"
+        android:layout_marginLeft="@dimen/width_485_dp"
         android:layout_marginTop="@dimen/height_59_dp"
         android:background="@drawable/map" />
 
