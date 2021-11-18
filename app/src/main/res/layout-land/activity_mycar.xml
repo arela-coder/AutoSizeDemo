@@ -8,7 +8,7 @@
 
     <ImageView
         android:layout_width="@dimen/width_180_dp"
-        android:layout_height="@dimen/height_720_dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="@dimen/height_56_dp"
         android:layout_marginBottom="@dimen/height_60_dp"
         android:src="@drawable/ic_bg_main_menu" />
@@ -26,19 +26,19 @@
         android:layout_marginStart="@dimen/width_210_dp"
         android:orientation="horizontal">
 
-        <include
-            layout="@layout/fragment_carinfo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <!--        <include-->
-        <!--            layout="@layout/fragment_carinfo_autosize"-->
+        <!--            layout="@layout/fragment_carinfo"-->
         <!--            android:layout_width="match_parent"-->
         <!--            android:layout_height="match_parent"-->
         <!--            app:layout_constraintLeft_toLeftOf="parent"-->
         <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <include
+            layout="@layout/fragment_carinfo_autosize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
 

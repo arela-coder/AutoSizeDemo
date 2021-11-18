@@ -1,6 +1,7 @@
 package com.tingli.autosizedemo;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -51,7 +52,29 @@ public class AutoSizeActivity extends Activity {
         super.onConfigurationChanged(newConfig);
     }
 
+    /**
+     * 是否横屏
+     *
+     * @return isLand
+     */
+    public boolean isLandScreenChange(Context context) {
+        Configuration mConfiguration = context.getResources().getConfiguration(); //获取设置的配置信息
+        return mConfiguration.orientation == Configuration.ORIENTATION_LANDSCAPE;
+    }
+
     private void init() {
+
+        if (isLandScreenChange(this))
+        {
+            designWidth = 1920;
+            designHeight = 720;
+        }
+        else
+        {
+            designWidth = 720;
+            designHeight = 1920;
+        }
+
         DisplayMetrics displayMetrics = this.getResources().getDisplayMetrics();
         screenWidth = displayMetrics.widthPixels;
         screenHeight = displayMetrics.heightPixels;
