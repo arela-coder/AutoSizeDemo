@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
     <!--  dp in height -->
     <dimen name="height_1_dp">.54dp</dimen>
     <dimen name="height_2_dp">1.09dp</dimen>

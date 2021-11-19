@@ -19,15 +19,9 @@
         android:layout_marginTop="210dp"
         android:orientation="horizontal">
 
-        <!--        <include-->
-        <!--            layout="@layout/fragment_carinfo"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
-        <!--            app:layout_constraintTop_toTopOf="parent" />-->
 
         <include
-            layout="@layout/fragment_carinfo_autosize"
+            layout="@layout/fragment_screen_mode_autosize"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -36,11 +30,12 @@
 
 
     <TextView
+        android:id="@+id/device_info"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:text="@string/dpi_test"
-        android:textColor="#333333"
+        android:textColor="#883333"
         android:textSize="40sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

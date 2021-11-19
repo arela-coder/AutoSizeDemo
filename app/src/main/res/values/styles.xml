@@ -135,8 +135,8 @@
 
 
     <style name="SceneEditCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
-        <!--        <item name="android:button">@drawable/cb_scene_edit_selector</item>-->
-        <!--        <item name="android:textColor">@drawable/cb_scene_text_color_selector</item>-->
+        <item name="android:button">@drawable/ic_scene_checkbox_uncheck</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:paddingLeft">@dimen/width_48_dp</item>
         <item name="android:textSize">@dimen/sp_32</item>
         <item name="android:layout_marginStart">@dimen/width_40_dp</item>
@@ -148,7 +148,7 @@
     <style name="SceneCheckboxBackGround" parent="@android:style/Widget.CompoundButton.CheckBox">
         <item name="android:button">@null</item>
         <item name="android:textColor">@color/white</item>
-        <!--        <item name="android:background">@drawable/bg_scene_radio_button_selector</item>-->
+        <item name="android:background">@drawable/btn_scene_save</item>
         <item name="android:textSize">@dimen/sp_32</item>
         <item name="android:gravity">center</item>
     </style>
@@ -157,7 +157,34 @@
         <item name="android:button">@null</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/sp_28</item>
-        <!--        <item name="android:background">@drawable/bg_scene_radio_button_selector</item>-->
+        <item name="android:background">@drawable/btn_scene_save</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SceneEditCheckbox_autoSize" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/ic_scene_checkbox_uncheck</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">48dp</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginTop">38dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="SceneCheckboxBackGround_autoSize" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_scene_save</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SceneEditRadioButton_autoSize">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:background">@drawable/btn_scene_save</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
@@ -165,7 +192,7 @@
         <item name="android:button">@null</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">@dimen/sp_24</item>
-        <!--        <item name="android:background">@drawable/selector_bg_rb_ijiaqu_mode</item>-->
+        <item name="android:background">@drawable/btn_scene_save</item>
         <item name="android:textColor">@color/white</item>
     </style>
 

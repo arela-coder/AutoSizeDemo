@@ -23,35 +23,36 @@ public class MainActivity extends com.tingli.autosizedemo.AutoSizeActivity {
     public void onConfigurationChanged(@NonNull Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         DisplayMetrics displayMetrics = getApplication().getResources().getDisplayMetrics();
-        Log.d(TAG, "onConfigurationChanged displayMetrics: " + displayMetrics.toString());
-        Log.d(TAG, "onConfigurationChanged displayMetrics: width in dp:" + displayMetrics.widthPixels / displayMetrics.density);
-        Log.d(TAG, "onConfigurationChanged displayMetrics: height in dp:" + displayMetrics.heightPixels / displayMetrics.density);
+        updateDeviceInfo(displayMetrics);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mycar_autosize);
+//                setContentView(R.layout.activity_mycar);
 
         DisplayMetrics displayMetrics = getApplication().getResources().getDisplayMetrics();
-        Log.d(TAG, "onCreate displayMetrics: " + displayMetrics.toString());
-        Log.d(TAG, "onCreate displayMetrics: width in dp:" + displayMetrics.widthPixels / displayMetrics.density);
-        Log.d(TAG, "onCreate displayMetrics: height in dp:" + displayMetrics.heightPixels / displayMetrics.density);
+        updateDeviceInfo(displayMetrics);
 
         /**
          * [MyCarApplication]:displayMetrics: DisplayMetrics{density=1.0, width=1920, height=620, scaledDensity=1.0, xdpi=224.737,
          * ydpi=134.47}
          */
-
         // 1920*720
         //DisplayMetrics{density=1.3312501, width=1920, height=720, scaledDensity=1.3312501, xdpi=213.0, ydpi=213.0}
-
         //DisplayMetrics{density=2.75, width=1920, height=1080, scaledDensity=2.75, xdpi=440.0, ydpi=440.0}
-
-
         // DisplayMetrics{density=1.0, width=1280, height=720, scaledDensity=1.0, xdpi=160.0, ydpi=160.0}
+    }
 
-
+    private void updateDeviceInfo(DisplayMetrics displayMetrics) {
+        Log.d(TAG, "updateDeviceInfo displayMetrics: " + displayMetrics.toString());
+        Log.d(TAG, "updateDeviceInfo displayMetrics: width in dp:" + displayMetrics.widthPixels / displayMetrics.density);
+        Log.d(TAG, "updateDeviceInfo displayMetrics: height in dp:" + displayMetrics.heightPixels / displayMetrics.density);
+        TextView infoTV = findViewById(R.id.device_info);
+        infoTV.setText(getString(R.string.dpi_test) + "\n");
+        infoTV.append("pixel is :" + displayMetrics.widthPixels + "*" + displayMetrics.heightPixels + "\n");
+        infoTV.append("density  is " + displayMetrics.density + "");
     }
 
 

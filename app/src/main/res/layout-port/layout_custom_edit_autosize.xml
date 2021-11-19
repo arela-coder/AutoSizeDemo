@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="64dp">
+
+        <ImageView
+            android:id="@+id/ll_back"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="80dp"
+            android:padding="10dp"
+            android:src="@drawable/test" />
+
+        <TextView
+            android:id="@+id/tv_scene_title"
+            android:layout_width="440dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@+id/ll_back"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingStart="40dp"
+            android:paddingEnd="100dp"
+            android:singleLine="true"
+            android:text="@string/custom_mode"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:id="@+id/ll_edit"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="96dp"
+            android:layout_toEndOf="@+id/tv_scene_title" />
+
+        <Button
+            android:id="@+id/btn_scene_edit_save"
+            android:layout_width="128dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="638dp"
+            android:background="@drawable/btn_scene_save"
+            android:enabled="false"
+            android:text="@string/str_save"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp">
+
+        <LinearLayout
+            android:layout_width="1140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="184dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_ac"
+                style="@style/SceneEditCheckbox_autoSize"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:text="@string/custom_scene_air_conditioner"
+                android:textSize="32sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#33ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_back_defrost"
+                    style="@style/SceneEditCheckbox_autoSize"
+                    android:layout_width="490dp"
+                    android:text="@string/str_open_back_defrost" />
+
+                <CheckBox
+                    android:id="@+id/cb_front_defrost"
+                    style="@style/SceneEditCheckbox_autoSize"
+                    android:layout_marginStart="120dp"
+                    android:text="@string/str_open_front_defrost" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="490dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_temperature"
+                        style="@style/SceneEditCheckbox_autoSize"
+                        android:text="@string/air_conditioner_temperature" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="118dp"
+                        android:layout_marginTop="32dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/iv_temperature_sub"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/ic_sub"
+                            android:enabled="true" />
+
+                        <TextView
+                            android:id="@+id/tv_temperature_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="44dp"
+                            android:text="18"
+                            android:textColor="@color/white"
+                            android:textSize="36dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="5dp" />
+
+                        <Button
+                            android:id="@+id/iv_temperature_add"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="44dp"
+                            android:background="@drawable/ic_add" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="490dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_blowing_rate"
+                        style="@style/SceneEditCheckbox_autoSize"
+                        android:text="@string/air_conditioner_gear" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="118dp"
+                        android:layout_marginTop="32dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/iv_blowing_sub"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/ic_sub"
+                            android:enabled="true" />
+
+                        <TextView
+                            android:id="@+id/tv_blowing_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="51dp"
+                            android:text="@string/str_6"
+                            android:textColor="@color/white"
+                            android:textSize="36sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp" />
+
+                        <Button
+                            android:id="@+id/iv_blowing_add"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="51dp"
+                            android:background="@drawable/ic_add" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_blowing_mode"
+                        style="@style/SceneEditCheckbox_autoSize"
+                        android:text="@string/air_conditioner_blow_mode" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="118dp"
+                        android:layout_marginTop="32dp">
+
+                        <CheckBox
+                            android:id="@+id/cb_blow_window"
+                            style="@style/SceneCheckboxBackGround_autoSize"
+                            android:layout_width="128dp"
+                            android:layout_height="56dp"
+                            android:background="@drawable/btn_scene_save"
+                            android:text="@string/air_conditioner_blow_window" />
+
+                        <CheckBox
+                            android:id="@+id/cb_blow_face"
+                            style="@style/SceneCheckboxBackGround_autoSize"
+                            android:layout_width="128dp"
+                            android:layout_height="56dp"
+                            android:layout_marginStart="24dp"
+                            android:background="@drawable/btn_scene_save"
+                            android:checked="true"
+                            android:text="@string/air_conditioner_blow_face" />
+
+                        <CheckBox
+                            android:id="@+id/cb_blow_foot"
+                            style="@style/SceneCheckboxBackGround_autoSize"
+                            android:layout_width="128dp"
+                            android:layout_height="56dp"
+                            android:layout_marginStart="24dp"
+                            android:text="@string/air_conditioner_blow_foot" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="490dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_loop_mode"
+                        style="@style/SceneEditCheckbox_autoSize"
+                        android:text="@string/str_loop_mode" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_loop_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56dp"
+                        android:layout_marginStart="118dp"
+                        android:layout_marginTop="32dp"
+                        android:checkedButton="@+id/rb_inner_loop"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_inner_loop"
+                            style="@style/SceneEditRadioButton_autoSize"
+                            android:layout_width="128dp"
+                            android:layout_height="56dp"
+                            android:text="@string/str_inner_loop" />
+
+                        <RadioButton
+                            android:id="@+id/rb_out_loop"
+                            style="@style/SceneEditRadioButton_autoSize"
+                            android:layout_width="128dp"
+                            android:layout_height="56dp"
+                            android:text="@string/str_out_loop" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/seat_ventilation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_seat_ventilation"
+                    style="@style/SceneEditCheckbox_autoSize"
+                    android:text="@string/custom_scene_seat" />
+
+                <RadioGroup
+                    android:id="@+id/rg_seat_ventilation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="118dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="38dp"
+                    android:checkedButton="@+id/rb_intelligent_d_mode"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_seat_ventilation_1"
+                        style="@style/SceneEditRadioButton_autoSize"
+                        android:layout_width="128dp"
+                        android:layout_height="56dp"
+                        android:text="@string/custom_scene_seat_1" />
+
+                    <RadioButton
+                        android:id="@+id/rb_seat_ventilation_2"
+                        style="@style/SceneEditRadioButton_autoSize"
+                        android:layout_width="128dp"
+                        android:layout_height="56dp"
+                        android:text="@string/custom_scene_seat_2" />
+
+                    <RadioButton
+                        android:id="@+id/rb_seat_ventilation_3"
+                        style="@style/SceneEditRadioButton_autoSize"
+                        android:layout_width="128dp"
+                        android:layout_height="56dp"
+                        android:text="@string/custom_scene_seat_3" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageview_seatventilate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/open_sunroof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_open_window"
+                    style="@style/SceneEditCheckbox_autoSize"
+                    android:text="@string/custom_scene_window" />
+
+                <RadioGroup
+                    android:id="@+id/rg_open_window"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="118dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="38dp"
+                    android:checkedButton="@+id/rb_window_open"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_window_open"
+                        style="@style/SceneEditRadioButton_autoSize"
+                        android:layout_width="128dp"
+                        android:layout_height="56dp"
+                        android:text="@string/str_window_full_open" />
+
+                    <RadioButton
+                        android:id="@+id/rb_window_cock"
+                        style="@style/SceneEditRadioButton_autoSize"
+                        android:layout_width="128dp"
+                        android:layout_height="56dp"
+                        android:text="@string/str_window_cock" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageview_opensunroof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/light_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--                <include layout="@layout/layout_light_space" />-->
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageview_lingtspace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

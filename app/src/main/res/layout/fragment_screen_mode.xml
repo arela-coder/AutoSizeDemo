@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/width_48_dp"
+    android:paddingTop="@dimen/height_86_dp">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:splitMotionEvents="false"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <com.tingli.autosizedemo.SceneCard
+            android:id="@+id/card_cool_mode"
+            android:layout_width="@dimen/width_260_dp"
+            android:layout_height="@dimen/height_184_dp"
+            android:layout_margin="@dimen/width_24_dp"
+            app:icon="@drawable/test"
+            app:title="@string/cool_mode" />
+
+        <com.tingli.autosizedemo.SceneCard
+            android:id="@+id/card_warm_mode"
+            android:layout_width="@dimen/width_260_dp"
+            android:layout_height="@dimen/height_184_dp"
+            android:layout_margin="@dimen/width_24_dp"
+            app:icon="@drawable/test"
+            app:title="@string/warm_mode" />
+
+        <com.tingli.autosizedemo.SceneCard
+            android:id="@+id/card_park_mode"
+            android:layout_width="@dimen/width_260_dp"
+            android:layout_height="@dimen/height_184_dp"
+            android:layout_margin="@dimen/width_24_dp"
+            app:icon="@drawable/test"
+            app:title="@string/park_mode" />
+
+        <com.tingli.autosizedemo.SceneCard
+            android:id="@+id/card_baby_mode"
+            android:layout_width="@dimen/width_260_dp"
+            android:layout_height="@dimen/height_184_dp"
+            android:layout_margin="@dimen/width_24_dp"
+            app:icon="@drawable/test"
+            app:title="@string/baby_mode" />
+
+        <com.tingli.autosizedemo.SceneCard
+            android:id="@+id/card_smoke_mode"
+            android:layout_width="@dimen/width_260_dp"
+            android:layout_height="@dimen/height_184_dp"
+            android:layout_margin="@dimen/width_24_dp"
+            app:icon="@drawable/test"
+            app:title="@string/smoke_mode" />
+
+        <com.tingli.autosizedemo.SceneCard
+            android:id="@+id/card_snow_mode"
+            android:layout_width="@dimen/width_260_dp"
+            android:layout_height="@dimen/height_184_dp"
+            android:layout_margin="@dimen/width_24_dp"
+            app:icon="@drawable/test"
+            app:title="@string/snow_mode" />
+
+        <com.tingli.autosizedemo.SceneCard
+            android:id="@+id/card_romantic_mode"
+            android:layout_width="@dimen/width_260_dp"
+            android:layout_height="@dimen/height_184_dp"
+            android:layout_margin="@dimen/width_24_dp"
+            app:icon="@drawable/test"
+            app:title="@string/romantic_mode" />
+
+
+        <com.tingli.autosizedemo.SceneCard
+            android:id="@+id/card_pm_mode"
+            android:layout_width="@dimen/width_260_dp"
+            android:layout_height="@dimen/height_184_dp"
+            android:layout_margin="@dimen/width_24_dp"
+            app:icon="@drawable/test"
+            app:title="@string/pm_mode" />
+
+        <com.tingli.autosizedemo.SceneCard
+            android:id="@+id/card_car_wash_mode"
+            android:layout_width="@dimen/width_260_dp"
+            android:layout_height="@dimen/height_184_dp"
+            android:layout_margin="@dimen/width_24_dp"
+            android:visibility="gone"
+            app:icon="@drawable/test"
+            app:title="@string/car_wash_mode" />
+
+        <com.tingli.autosizedemo.SceneCard
+            android:id="@+id/card_custom_mode_add"
+            android:layout_width="@dimen/width_260_dp"
+            android:layout_height="@dimen/height_184_dp"
+            android:layout_margin="@dimen/width_24_dp"
+            android:visibility="visible"
+            app:icon="@drawable/test"
+            app:title="@string/custom_mode" />
+
+        <com.tingli.autosizedemo.SceneCard
+            android:id="@+id/card_custom_scene_mode"
+            android:layout_width="@dimen/width_260_dp"
+            android:layout_height="@dimen/height_184_dp"
+            android:layout_margin="@dimen/width_24_dp"
+            android:visibility="gone"
+            app:icon="@drawable/test"
+            app:title="@string/custom_mode" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>
