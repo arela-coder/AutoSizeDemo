@@ -2,6 +2,6 @@
     <string name="app_name">AutoSizeDemo2</string>
 
 
-    <string name="dpi_test">w720dp</string>
+    <string name="dpi_test">w1280dp_land</string>
 
 </resources>

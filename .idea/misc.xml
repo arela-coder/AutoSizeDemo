@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/drawable-1280x720/test.xml" value="0.42421875" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/drawable-hdpi/test.xml" value="0.3020833333333333" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/drawable-ldpi/test.xml" value="0.3020833333333333" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/drawable-mdpi/test.xml" value="0.3020833333333333" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/drawable-nodpi/test.xml" value="0.3020833333333333" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/drawable-xhdpi/test.xml" value="0.3020833333333333" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21875" />
-        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/activity_launcher.xml" value="0.22" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/drawable/test.xml" value="0.3020833333333333" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/activity_launcher.xml" value="0.1" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/activity_launcher_autosize.xml" value="0.12" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/activity_main.xml" value="0.4635416666666667" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/activity_media_dp.xml" value="0.33" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/activity_mycar.xml" value="0.22" />
@@ -12,17 +20,21 @@
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/activity_mycar_autosize.xml" value="0.22" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/activity_test.xml" value="0.46979166666666666" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/activity_test_height.xml" value="0.4635416666666667" />
-        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/fragment_carinfo.xml" value="0.25" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/fragment_carinfo.xml" value="0.16" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/fragment_carinfo_autosize.xml" value="0.18" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/fragment_screen_mode.xml" value="0.47239583333333335" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/fragment_usb.xml" value="0.475" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/layout_custom_edit.xml" value="0.22" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-land/layout_custom_edit_autosize.xml" value="0.33" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/activity_launcher.xml" value="0.1" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/activity_launcher_autosize.xml" value="0.25729166666666664" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/activity_main.xml" value="0.25729166666666664" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/activity_media_dp.xml" value="0.3" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/activity_mycar.xml" value="0.18489583333333334" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/activity_mycar_autosize.xml" value="0.18489583333333334" />
-        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/fragment_carinfo_autosize.xml" value="0.18" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/fragment_carinfo.xml" value="0.22" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/fragment_carinfo_autosize.xml" value="0.14" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/fragment_custom_edit.xml" value="0.25729166666666664" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/layout_custom_edit.xml" value="0.2640625" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout-port/layout_custom_edit_autosize.xml" value="0.2640625" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_launcher.xml" value="0.1" />
@@ -31,7 +43,7 @@
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_media_dp.xml" value="0.25" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_media_px.xml" value="0.33" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_mycar.xml" value="0.14" />
-        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_test.xml" value="0.25" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_test.xml" value="0.2" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_test_height.xml" value="0.1" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/fragment_carinfo.xml" value="0.25" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/fragment_carinfo_autosize.xml" value="0.25" />
@@ -40,8 +52,8 @@
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/fragment_usb.xml" value="0.25" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/layout_con.xml" value="0.20104166666666667" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/layout_custom_edit.xml" value="0.19947916666666668" />
-        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/layout_scene_card.xml" value="1.0" />
-        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/layout_scene_card_autosize.xml" value="0.215625" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/layout_scene_card.xml" value="0.25" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/layout_scene_card_autosize.xml" value="0.15" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.31354166666666666" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.21510416666666668" />
       </map>

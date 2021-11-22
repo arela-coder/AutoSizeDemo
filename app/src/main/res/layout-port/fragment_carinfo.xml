@@ -1,209 +1,293 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:orientation="horizontal">
+    tools:ignore="MissingDefaultResource">
 
-    <RelativeLayout
-        android:layout_width="@dimen/width_714_dp"
-        android:layout_height="@dimen/height_720_dp"
-        android:layout_marginStart="@dimen/width_18_dp"
-        android:layout_marginTop="@dimen/height_20_dp"
-        android:layout_marginBottom="-20dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="center"
-            android:src="@drawable/ic_overlook_drive_data_car" />
+            android:src="@drawable/ic_overlook_drive_data_car"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.76" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
 
         <TextView
             android:id="@+id/tv_range_title"
-            style="@style/content_text_style_24_50per"
-            android:layout_marginStart="@dimen/width_161_dp"
-            android:layout_marginTop="@dimen/height_416_dp"
-            android:text="@string/str_range_remaining" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/width_30_dp"
+            android:text="@string/str_range_remaining"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24"
+            app:layout_constraintBottom_toTopOf="@id/tv_range_remaining"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_vertical" />
 
         <TextView
             android:id="@+id/tv_range_remaining"
-            style="@style/content_text_style_48_90per"
-            android:layout_below="@+id/tv_range_title"
-            android:layout_marginStart="@dimen/width_161_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/height_8_dp"
+            android:layout_marginRight="@dimen/width_30_dp"
+            android:layout_marginBottom="@dimen/height_30_dp"
             android:gravity="center_vertical"
-            android:text="@string/str_nothing_get" />
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_48"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal"
+            app:layout_constraintRight_toLeftOf="@+id/remaining_unit" />
 
         <TextView
-            style="@style/content_text_style_24_30per"
+            android:id="@+id/remaining_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/tv_range_title"
-            android:layout_marginStart="@dimen/width_8_dp"
-            android:layout_marginTop="@dimen/height_37_dp"
+            android:layout_marginRight="@dimen/width_30_dp"
+            android:layout_marginBottom="@dimen/height_30_dp"
             android:layout_toEndOf="@+id/tv_range_remaining"
-            android:text="@string/str_unit_kilometer" />
+            android:text="@string/str_unit_kilometer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal"
+            app:layout_constraintRight_toLeftOf="@id/guideline_vertical" />
 
 
         <TextView
             android:id="@+id/tv_total_mileage_title"
-            style="@style/content_text_style_24_50per"
-            android:layout_marginStart="@dimen/width_409_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_30_dp"
             android:layout_marginTop="@dimen/height_416_dp"
-            android:text="@string/str_odometer" />
+            android:text="@string/str_odometer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24"
+            app:layout_constraintBottom_toTopOf="@id/tv_odometer"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_vertical" />
 
         <TextView
             android:id="@+id/tv_odometer"
-            style="@style/content_text_style_48_90per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/tv_total_mileage_title"
-            android:layout_marginStart="@dimen/width_409_dp"
+            android:layout_marginLeft="@dimen/width_30_dp"
             android:layout_marginTop="@dimen/height_8_dp"
-            android:text="@string/str_nothing_get" />
+            android:layout_marginBottom="@dimen/height_30_dp"
+            android:text="@string/str_nothing_get"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_48"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal"
+            app:layout_constraintLeft_toRightOf="@+id/guideline_vertical" />
 
         <TextView
-            style="@style/content_text_style_24_30per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/tv_total_mileage_title"
             android:layout_marginStart="@dimen/width_8_dp"
             android:layout_marginTop="@dimen/height_37_dp"
+            android:layout_marginBottom="@dimen/height_30_dp"
             android:layout_toEndOf="@+id/tv_odometer"
-            android:text="@string/str_unit_kilometer" />
+            android:text="@string/str_unit_kilometer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24"
+            app:layout_constraintBottom_toTopOf="@id/guideline_horizontal"
+            app:layout_constraintLeft_toRightOf="@id/tv_odometer" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/content2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_bg_drive_data_subtotal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/width_48_dp"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content1"
+        app:layout_constraintWidth_percent="0.5">
+
+        <TextView
+            android:id="@+id/title_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="@string/str_subtotal_1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_32" />
+
+        <TextView
+            android:id="@+id/tv_average_speed_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_A"
+            android:layout_marginTop="@dimen/height_5_dp"
+            android:text="@string/str_avg_speed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24" />
+
+        <TextView
+            android:id="@+id/tv_avg_speed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_average_speed_title1"
+            android:layout_marginTop="@dimen/height_10_dp"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_average_speed_title1"
+            android:layout_alignTop="@id/tv_avg_speed1"
+            android:layout_marginStart="@dimen/width_10_dp"
+            android:layout_marginTop="@dimen/height_26_dp"
+            android:layout_toEndOf="@+id/tv_avg_speed1"
+            android:text="@string/str_unit_speed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+
+
+        <TextView
+            android:id="@+id/tv_average_fuel_consumption_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_avg_speed1"
+            android:layout_marginTop="@dimen/height_45_dp"
+            android:text="@string/str_avg_fuel_consumption"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24" />
+
+        <TextView
+            android:id="@+id/tv_avg_fuel_consumption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_average_fuel_consumption_title1"
+            android:layout_marginTop="@dimen/height_10_dp"
+            android:text="@string/str_nothing_get"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_average_fuel_consumption_title1"
+            android:layout_marginStart="@dimen/width_10_dp"
+            android:layout_marginTop="@dimen/height_26_dp"
+            android:layout_toEndOf="@+id/tv_avg_fuel_consumption1"
+            android:text="@string/str_unit_avg_fuel_consumption"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+
     </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="@dimen/width_400_dp"
-        android:layout_height="@dimen/height_420_dp"
-        android:layout_marginStart="@dimen/width_50_dp"
-        android:layout_marginTop="@dimen/height_140_dp"
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@drawable/ic_bg_drive_data_subtotal"
-        android:orientation="vertical"
-        android:paddingStart="@dimen/width_48_dp">
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/width_48_dp"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintLeft_toRightOf="@id/content2"
+        app:layout_constraintTop_toBottomOf="@id/content1"
+        app:layout_constraintWidth_percent="0.5">
+
 
         <TextView
-            style="@style/content_text_style_32_100per"
+            android:id="@+id/title_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/height_56_dp"
-            android:text="@string/str_subtotal_1" />
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/height_50_dp">
-
-            <TextView
-                android:id="@+id/tv_average_speed_title1"
-                style="@style/content_text_style_24_50per"
-                android:text="@string/str_avg_speed" />
-
-            <TextView
-                android:id="@+id/tv_avg_speed1"
-                style="@style/content_text_style_36_90per"
-                android:layout_below="@+id/tv_average_speed_title1"
-                android:layout_marginTop="@dimen/height_10_dp"
-                android:text="@string/str_nothing_get" />
-
-            <TextView
-                style="@style/content_text_style_20_30per"
-                android:layout_below="@+id/tv_average_speed_title1"
-                android:layout_marginStart="@dimen/width_10_dp"
-                android:layout_marginTop="@dimen/height_26_dp"
-                android:layout_toEndOf="@+id/tv_avg_speed1"
-                android:text="@string/str_unit_speed" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/height_45_dp">
-
-            <TextView
-                android:id="@+id/tv_average_fuel_consumption_title1"
-                style="@style/content_text_style_24_50per"
-                android:text="@string/str_avg_fuel_consumption" />
-
-            <TextView
-                android:id="@+id/tv_avg_fuel_consumption1"
-                style="@style/content_text_style_36_90per"
-                android:layout_below="@+id/tv_average_fuel_consumption_title1"
-                android:layout_marginTop="@dimen/height_10_dp"
-                android:text="@string/str_nothing_get" />
-
-            <TextView
-                style="@style/content_text_style_20_30per"
-                android:layout_below="@+id/tv_average_fuel_consumption_title1"
-                android:layout_marginStart="@dimen/width_10_dp"
-                android:layout_marginTop="@dimen/height_26_dp"
-                android:layout_toEndOf="@+id/tv_avg_fuel_consumption1"
-                android:text="@string/str_unit_avg_fuel_consumption" />
-        </RelativeLayout>
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="@dimen/width_400_dp"
-        android:layout_height="@dimen/height_420_dp"
-        android:layout_marginStart="@dimen/width_40_dp"
-        android:layout_marginTop="@dimen/height_140_dp"
-        android:background="@drawable/ic_bg_drive_data_subtotal"
-        android:orientation="vertical"
-        android:paddingStart="@dimen/width_48_dp">
+            android:text="@string/str_subtotal_2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_32" />
 
         <TextView
-            style="@style/content_text_style_32_100per"
-            android:layout_marginTop="@dimen/height_56_dp"
-            android:text="@string/str_subtotal_2" />
-
-        <RelativeLayout
+            android:id="@+id/tv_average_speed_title2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/height_50_dp">
+            android:layout_below="@+id/title_B"
+            android:layout_marginTop="@dimen/height_50_dp"
+            android:text="@string/str_avg_speed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24" />
 
-            <TextView
-                android:id="@+id/tv_average_speed_title2"
-                style="@style/content_text_style_24_50per"
-                android:text="@string/str_avg_speed" />
-
-            <TextView
-                android:id="@+id/tv_avg_speed2"
-                style="@style/content_text_style_36_90per"
-                android:layout_below="@+id/tv_average_speed_title2"
-                android:layout_marginTop="@dimen/height_10_dp"
-                android:text="@string/str_nothing_get" />
-
-            <TextView
-                style="@style/content_text_style_20_30per"
-                android:layout_below="@+id/tv_average_speed_title2"
-                android:layout_marginStart="@dimen/width_10_dp"
-                android:layout_marginTop="@dimen/height_26_dp"
-                android:layout_toEndOf="@+id/tv_avg_speed2"
-                android:text="@string/str_unit_speed" />
-        </RelativeLayout>
-
-        <RelativeLayout
+        <TextView
+            android:id="@+id/tv_avg_speed2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/height_45_dp">
+            android:layout_below="@+id/tv_average_speed_title2"
+            android:layout_marginTop="@dimen/height_10_dp"
+            android:text="@string/str_nothing_get"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_36" />
 
-            <TextView
-                android:id="@+id/tv_average_fuel_consumption_title2"
-                style="@style/content_text_style_24_50per"
-                android:text="@string/str_avg_fuel_consumption" />
-
-            <TextView
-                android:id="@+id/tv_avg_fuel_consumption2"
-                style="@style/content_text_style_36_90per"
-                android:layout_below="@+id/tv_average_fuel_consumption_title2"
-                android:layout_marginTop="@dimen/height_10_dp"
-                android:text="@string/str_nothing_get" />
-
-            <TextView
-                style="@style/content_text_style_20_30per"
-                android:layout_below="@+id/tv_average_fuel_consumption_title2"
-                android:layout_marginStart="@dimen/width_10_dp"
-                android:layout_marginTop="@dimen/height_26_dp"
-                android:layout_toEndOf="@+id/tv_avg_fuel_consumption2"
-                android:text="@string/str_unit_avg_fuel_consumption" />
-        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_average_speed_title2"
+            android:layout_marginStart="@dimen/width_10_dp"
+            android:layout_marginTop="@dimen/height_26_dp"
+            android:layout_toEndOf="@+id/tv_avg_speed2"
+            android:text="@string/str_unit_speed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
 
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_average_fuel_consumption_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_avg_speed2"
+            android:layout_marginTop="@dimen/height_45_dp"
+            android:text="@string/str_avg_fuel_consumption"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_avg_fuel_consumption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_average_fuel_consumption_title2"
+            android:layout_marginTop="@dimen/height_10_dp"
+            android:text="@string/str_nothing_get"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_average_fuel_consumption_title2"
+            android:layout_marginStart="@dimen/width_10_dp"
+            android:layout_marginTop="@dimen/width_26_dp"
+            android:layout_toEndOf="@+id/tv_avg_fuel_consumption2"
+            android:text="@string/str_unit_avg_fuel_consumption"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

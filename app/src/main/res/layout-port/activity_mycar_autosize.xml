@@ -19,9 +19,8 @@
         android:layout_marginTop="210dp"
         android:orientation="horizontal">
 
-
         <include
-            layout="@layout/fragment_screen_mode_autosize"
+            layout="@layout/fragment_carinfo_autosize"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintLeft_toLeftOf="parent"

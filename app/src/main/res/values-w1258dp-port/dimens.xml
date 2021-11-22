@@ -2,7 +2,6 @@
 <resources>
 
 
-
     <!--  dp in height -->
 
     <dimen name="height_1_dp">1.38dp</dimen>

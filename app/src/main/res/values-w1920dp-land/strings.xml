@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">AutoSizeDemo2</string>
 
-
-    <string name="dpi_test">w698dp</string>
-
+    <string name="dpi_test">w1920dp_land</string>
 </resources>

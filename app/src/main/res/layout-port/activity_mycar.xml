@@ -10,14 +10,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_main_menu"
-        android:layout_width="@dimen/width_720_dp"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/height_180_dp" />
 
     <LinearLayout
         android:id="@+id/fl_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/width_210_dp"
+        android:layout_marginTop="@dimen/height_210_dp"
         android:orientation="horizontal">
 
         <include
@@ -35,7 +35,7 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:text="@string/dpi_test"
-        android:textColor="#883333"
+        android:textColor="@color/white"
         android:textSize="@dimen/sp_40"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
