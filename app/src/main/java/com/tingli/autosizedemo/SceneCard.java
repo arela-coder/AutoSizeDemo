@@ -27,8 +27,8 @@ public class SceneCard extends RelativeLayout {
 
     public SceneCard(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-//                rootView = LayoutInflater.from(context).inflate(R.layout.layout_scene_card, this);
-        rootView = LayoutInflater.from(context).inflate(R.layout.layout_scene_card_autosize, this);
+        rootView = LayoutInflater.from(context).inflate(R.layout.layout_scene_card, this);
+        //        rootView = LayoutInflater.from(context).inflate(R.layout.layout_scene_card_autosize, this);
         TypedArray ta = context.getTheme().obtainStyledAttributes(attrs, R.styleable.SceneCard, 0, 0);
         int n = ta.getIndexCount();
         for (int i = 0; i < n; i++)

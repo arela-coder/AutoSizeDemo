@@ -3,19 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
+    android:gravity="center_vertical"
     android:orientation="horizontal">
 
     <RelativeLayout
         android:layout_width="@dimen/width_714_dp"
         android:layout_height="@dimen/height_720_dp"
         android:layout_marginStart="@dimen/width_18_dp"
-        android:layout_marginTop="@dimen/height_20_dp"
         android:layout_marginBottom="-20dp">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="center"
             android:src="@drawable/ic_overlook_drive_data_car" />
 
         <TextView
@@ -71,7 +70,6 @@
         android:layout_width="@dimen/width_400_dp"
         android:layout_height="@dimen/height_420_dp"
         android:layout_marginStart="@dimen/width_50_dp"
-        android:layout_marginTop="@dimen/height_140_dp"
         android:background="@drawable/ic_bg_drive_data_subtotal"
         android:orientation="vertical"
         android:paddingStart="@dimen/width_48_dp">
@@ -141,7 +139,6 @@
         android:layout_width="@dimen/width_400_dp"
         android:layout_height="@dimen/height_420_dp"
         android:layout_marginStart="@dimen/width_40_dp"
-        android:layout_marginTop="@dimen/height_140_dp"
         android:background="@drawable/ic_bg_drive_data_subtotal"
         android:orientation="vertical"
         android:paddingStart="@dimen/width_48_dp">

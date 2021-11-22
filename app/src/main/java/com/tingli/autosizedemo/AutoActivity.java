@@ -1,21 +1,14 @@
 package com.tingli.autosizedemo;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.util.DisplayMetrics;
 import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import java.lang.ref.WeakReference;
-
-public class MainActivity extends Activity {
+public class AutoActivity extends com.tingli.autosizedemo.AutoSizeActivity {
     String TAG = getClass().getSimpleName();
 
     @Override
@@ -28,8 +21,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_launcher);
-        //        setContentView(R.layout.activity_test);
+        setContentView(R.layout.activity_mycar_autosize);
 
         DisplayMetrics displayMetrics = getApplication().getResources().getDisplayMetrics();
         updateDeviceInfo(displayMetrics);
@@ -51,9 +43,7 @@ public class MainActivity extends Activity {
         TextView infoTV = findViewById(R.id.device_info);
         infoTV.setText(getString(R.string.dpi_test) + "\n");
         infoTV.append("pixel is :" + displayMetrics.widthPixels + "*" + displayMetrics.heightPixels + "\n");
-        infoTV.append("density  is " + displayMetrics.density + "\n");
-        //        infoTV.append("width and height in dp is :" + displayMetrics.widthPixels / displayMetrics.density + "*" +
-        //        displayMetrics.heightPixels / displayMetrics.density + "\n");
+        infoTV.append("density  is " + displayMetrics.density + "");
     }
 
 
