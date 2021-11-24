@@ -32,6 +32,7 @@
     <!--        android:text="宽高为200px"-->
     <!--        android:textSize="26sp" />-->
 
+
     <TextView
         android:id="@+id/device_info"
         android:layout_width="match_parent"

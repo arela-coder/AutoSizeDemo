@@ -9,8 +9,7 @@
         android:id="@+id/device_info"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:background="@drawable/test"
-        android:text="product A" />
+        android:background="@drawable/test" />
 
     <TextView
         android:layout_width="wrap_content"
