@@ -43,7 +43,7 @@
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_media_dp.xml" value="0.25" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_media_px.xml" value="0.33" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_mycar.xml" value="0.14" />
-        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_test.xml" value="0.5" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_test.xml" value="0.22" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/activity_test_height.xml" value="0.1" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/fragment_carinfo.xml" value="0.25" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/fragment_carinfo_autosize.xml" value="0.25" />
@@ -56,6 +56,12 @@
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/layout/layout_scene_card_autosize.xml" value="0.15" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.31354166666666666" />
         <entry key="..\:/Code/AutoSizeDemo2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.21510416666666668" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/productA/res/drawable-mdpi/test.xml" value="0.26614583333333336" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/productA/res/drawable/test.xml" value="0.23802083333333332" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/productA/res/layout/activity_test.xml" value="0.2859375" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/productB/res/drawable-mdpi/test.xml" value="0.26614583333333336" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/productB/res/drawable/test.xml" value="0.22239583333333332" />
+        <entry key="..\:/Code/AutoSizeDemo2/app/src/productB/res/layout/activity_test.xml" value="0.2859375" />
       </map>
     </option>
   </component>

@@ -13,6 +13,19 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //版本名后面添加一句话，意思就是flavor dimension 它的维度就是该版本号，这样维度就是都是统一的了
+        flavorDimensions "versionCode"
+    }
+    productFlavors {
+        productA {
+            applicationId "com.tingli.autosizedemo.A"
+            versionName "version-a-1.0"
+        }
+
+        productB {
+            applicationId "com.tingli.autosizedemo.B"
+            versionName "version-b-1.0"
+        }
     }
 
     buildTypes {
@@ -25,6 +38,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
@@ -37,4 +51,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.google.android:flexbox:0.2.6'
+
+    productAImplementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    productBImplementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
 }
