@@ -20,11 +20,23 @@ android {
         productA {
             applicationId "com.tingli.autosizedemo.A"
             versionName "version-a-1.0"
+            resValue "string", "app_name", "demoA"
+            manifestPlaceholders = [app_name: "demoA", icon: "@mipmap/demo_a"]
         }
 
         productB {
             applicationId "com.tingli.autosizedemo.B"
             versionName "version-b-1.0"
+            resValue "string", "app_name", "demoB"   // 修改app  name
+            manifestPlaceholders = [app_name: "demoB", icon: "@mipmap/test"]
+        }
+    }
+    // 修改apk name
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = productFlavors[0].name + "_" +
+                    defaultConfig.versionName + "_" + defaultConfig.versionCode + "_" + buildType.name +
+                    ".apk"
         }
     }
 
@@ -38,8 +50,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
 
 }
+
 
 dependencies {
 
@@ -54,5 +71,8 @@ dependencies {
 
     productAImplementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     productBImplementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+//    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
 
 }

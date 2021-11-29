@@ -11,8 +11,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.CheckResult;
 import androidx.annotation.NonNull;
 
+import java.lang.annotation.Documented;
 import java.lang.ref.WeakReference;
 
 public class MainActivity extends Activity {
@@ -26,6 +28,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
@@ -33,6 +36,12 @@ public class MainActivity extends Activity {
 
         DisplayMetrics displayMetrics = getApplication().getResources().getDisplayMetrics();
         updateDeviceInfo(displayMetrics);
+        Handler handler = new Handler(new Handler.Callback() {
+            @Override
+            public boolean handleMessage(@NonNull Message msg) {
+                return false;
+            }
+        });
 
         /**
          * [MyCarApplication]:displayMetrics: DisplayMetrics{density=1.0, width=1920, height=620, scaledDensity=1.0, xdpi=224.737,
@@ -43,6 +52,7 @@ public class MainActivity extends Activity {
         //DisplayMetrics{density=2.75, width=1920, height=1080, scaledDensity=2.75, xdpi=440.0, ydpi=440.0}
         // DisplayMetrics{density=1.0, width=1280, height=720, scaledDensity=1.0, xdpi=160.0, ydpi=160.0}
     }
+
 
     private void updateDeviceInfo(DisplayMetrics displayMetrics) {
         Log.d(TAG, "updateDeviceInfo displayMetrics: " + displayMetrics.toString());

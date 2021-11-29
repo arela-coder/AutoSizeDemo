@@ -2,6 +2,8 @@ package com.tingli.autosizedemo
 
 import android.app.Activity
 import android.os.Bundle
+import java.lang.annotation.Documented
+
 
 class AAA : Activity() {
 

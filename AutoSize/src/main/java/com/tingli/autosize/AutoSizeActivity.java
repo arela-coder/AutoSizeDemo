@@ -63,7 +63,6 @@ public class AutoSizeActivity extends Activity {
     }
 
     private void init() {
-
         if (isLandScreenChange(this))
         {
             designWidth = 1920;
