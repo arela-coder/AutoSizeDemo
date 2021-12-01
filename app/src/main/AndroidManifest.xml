@@ -13,12 +13,20 @@
         <activity
             android:name=".TestActivity"
             android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".eventbus.EventTestActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".eventbus.EventTestActivity2" />
+        <activity android:name=".eventbus.EventTestActivity3" />
     </application>
 
 </manifest>
